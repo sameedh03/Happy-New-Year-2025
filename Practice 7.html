@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practice 7</title>
+		<meta charset = "UTF-8">
+		<style type = "text/css">
+			body {background-image: url('https://i.pinimg.com/originals/0e/b1/56/0eb15636563ecc2920056a5dd6e496c5.gif');
+				  background-size: cover;
+				  height: 100vh;
+				  text-align: center;
+				  margin: 0;
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+				  }
+			
+			
+			h1 {color: Orange;
+				text-align: center;
+				font-family: Verdana;
+				margin: 0;
+				
+				}
+				
+			p {font-family: Cursive;
+			   color: blue;
+			   margin: 0;
+			   }
+			
+			.text {border: 2px solid black;
+				   border-radius: 5px;
+				   padding: 10px;
+				   margin: 10px;
+				   background-color: lightcyan;
+				   animation: zoomIn 10s forwards;
+				   }
+			@keyframes zoomIn{
+				0% {transform: scale(0.3)};
+				35% {tranform: scale(0.4)};
+				55% {tranform: scale(0.6)};
+				75% {tranform: scale(0.8)};
+				100% {tranform: scale(1)};
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				textAnimation();
+			}
+			
+			function textAnimation(){
+				var textAnt = document.getElementById('text');
+				textAnt.style.animation = 'zoomIn 2s forwards'; 
+					
+			}
+			
+		</script>
+	</head>	
+	<body>
+		<div class = "text">
+			<h1>Happy New Year Everyone !!</h1><br>
+			<p>I hope all us have a better life in this year.</p>
+		</div>
+	</body>
+</html>
